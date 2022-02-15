@@ -4,41 +4,48 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyProject
+
+namespace ConsoleApp2
 {
     class Program
     {
-        public static int Mas (int[] array){
-            int c = 0;
-            for (int i = 0; i < array.Length - 1; i++)
+
+
+        public static int[] array(int[] element)  //метод;
+        {
+            for (int i = 1; i < element.Length; i++)  //цикл перебора эллементов массива начиная со второго;
             {
-                if (array[i] < array[i + 1])
+                for (int j = 0; j < i; j++)  //цикл перебора эллементов масиива с 0 до эллемента i;
                 {
-                    c++;
+                    if (element[j] > element[i]) 
+                    {                        //условия выполнения присваиавния наибольшего эллемента; 
+                        element[i] = element[j];
+                    }
                 }
             }
-            Console.WriteLine("сумма:" + c);
-            return c;
 
+            foreach (int el in element)
+            {
+                Console.WriteLine(el);      //перебор и вывод массива 
+            }
+            return element;
         }
+
+
+
         static void Main(string[] args)
         {
+            
             Console.ForegroundColor = ConsoleColor.Green;
 
-            Console.WriteLine("Введите кол - во эллементов в массиве: ");
-            int number = int.Parse(Console.ReadLine());
-            int[] array = new int[number];
-            for (int i = 0; i < array.Length; i++)
-            {
-                Console.WriteLine("Введите {0} эллемент  массива: ",i);
-                array[i] = int.Parse(Console.ReadLine());
-            }
+
+            int[] element = { 1,0,5,10,2,11,2,8};  //массив;
+
+            array(element);  // вызов метода;
 
 
-            Mas(array);
-            
             Console.ReadKey();
+            Console.Clear();
         }
     }
-
 }
