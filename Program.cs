@@ -1,27 +1,44 @@
-﻿//Отсортировать массив (использовать любой алгоритм сортировки).
-using System;
+﻿using System;
 using System.Collections.Generic;
-namespace Csharp
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MyProject
 {
     class Program
     {
+        public static int Mas (int[] array){
+            int c = 0;
+            for (int i = 0; i < array.Length - 1; i++)
+            {
+                if (array[i] < array[i + 1])
+                {
+                    c++;
+                }
+            }
+            Console.WriteLine("сумма:" + c);
+            return c;
+
+        }
         static void Main(string[] args)
-        { 
-            System.Console.WriteLine("Введите колличество эллементов в массиве: ");
-            short num = short.Parse(Console.ReadLine());
-            List<short> mas = new List<short>();
-            System.Console.WriteLine("Введите значения: ");
-            for(short i = 0;i < num;i++){
-                mas.Add(short.Parse(Console.ReadLine()));
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            Console.WriteLine("Введите кол - во эллементов в массиве: ");
+            int number = int.Parse(Console.ReadLine());
+            int[] array = new int[number];
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine("Введите {0} эллемент  массива: ",i);
+                array[i] = int.Parse(Console.ReadLine());
             }
-            for(short i = 0; i < num;i++){
-                    System.Console.WriteLine($"Эллементы массива:{mas[i]}");
-            }
+
+
+            Mas(array);
             
-            mas.Sort();
-            foreach(short el in mas){
-                System.Console.WriteLine("Эллементы массива по возрастанию: {0}",el);
-            }
-        } 
+            Console.ReadKey();
+        }
     }
+
 }
