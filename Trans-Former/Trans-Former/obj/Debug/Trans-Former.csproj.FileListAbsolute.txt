@@ -1,0 +1,11 @@
+C:\Users\timak\source\repos\Trans-Former\Trans-Former\bin\Debug\Trans-Former.exe.config
+C:\Users\timak\source\repos\Trans-Former\Trans-Former\bin\Debug\Trans-Former.exe
+C:\Users\timak\source\repos\Trans-Former\Trans-Former\bin\Debug\Trans-Former.pdb
+C:\Users\timak\source\repos\Trans-Former\Trans-Former\obj\Debug\Trans-Former.csproj.AssemblyReference.cache
+C:\Users\timak\source\repos\Trans-Former\Trans-Former\obj\Debug\Trans_Former.Form1.resources
+C:\Users\timak\source\repos\Trans-Former\Trans-Former\obj\Debug\Trans_Former.Properties.Resources.resources
+C:\Users\timak\source\repos\Trans-Former\Trans-Former\obj\Debug\Trans-Former.csproj.GenerateResource.cache
+C:\Users\timak\source\repos\Trans-Former\Trans-Former\obj\Debug\Trans-Former.csproj.CoreCompileInputs.cache
+C:\Users\timak\source\repos\Trans-Former\Trans-Former\obj\Debug\Trans-Former.exe
+C:\Users\timak\source\repos\Trans-Former\Trans-Former\obj\Debug\Trans-Former.pdb
+C:\Users\timak\source\repos\Trans-Former\Trans-Former\obj\Debug\Trans_Former.Form2.resources
